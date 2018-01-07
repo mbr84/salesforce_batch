@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+salesforce_batch/__init__.py
+salesforce_batch/api.py
+salesforce_batch/bulk.py
+salesforce_batch/exceptions.py
+salesforce_batch/login.py
+salesforce_batch/util.py
+salesforce_batch.egg-info/PKG-INFO
+salesforce_batch.egg-info/SOURCES.txt
+salesforce_batch.egg-info/dependency_links.txt
+salesforce_batch.egg-info/requires.txt
+salesforce_batch.egg-info/top_level.txt
