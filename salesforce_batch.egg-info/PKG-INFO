@@ -1,12 +1,12 @@
 Metadata-Version: 1.1
 Name: salesforce-batch
-Version: 0.1.1
+Version: 0.1.2
 Summary: a fork of simple-salesforce with multi-batch jobs.
 Home-page: https://github.com/mbr84/salesforce_batch
 Author: NICK CATALANO forked by matt bramfeld
 Author-email: matthew.bramfeld@gmail.com
 License: UNKNOWN
-Download-URL: https://github.com/mbr84/salesforce_batch/archive/0.1.1.tar.gz
+Download-URL: https://github.com/mbr84/salesforce_batch/archive/0.1.2.tar.gz
 Description: UNKNOWN
 Keywords: python salesforce job batch salesforce.com
 Platform: UNKNOWN
