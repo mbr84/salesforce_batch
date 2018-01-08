@@ -1,6 +1,6 @@
 """Simple-Salesforce/Multi-Batch Package Setup"""
 
-from distutils.core import setup
+from setuptools import setup
 import textwrap
 import sys
 import os

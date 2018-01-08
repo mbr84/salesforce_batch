@@ -2,7 +2,7 @@
 
 import xml.dom.minidom
 
-from salesforce_batch.exceptions import (
+from simple_salesforce.exceptions import (
     SalesforceGeneralError, SalesforceExpiredSession,
     SalesforceMalformedRequest, SalesforceMoreThanOneRecord,
     SalesforceRefusedRequest, SalesforceResourceNotFound

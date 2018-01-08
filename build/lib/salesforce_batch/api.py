@@ -18,12 +18,12 @@ except ImportError:
     # Python 3+
     from urllib.parse import urlparse, urljoin
 
-from salesforce_batch.login import SalesforceLogin
-from salesforce_batch.util import date_to_iso8601, exception_handler
-from salesforce_batch.exceptions import (
+from simple_salesforce.login import SalesforceLogin
+from simple_salesforce.util import date_to_iso8601, exception_handler
+from simple_salesforce.exceptions import (
     SalesforceGeneralError
 )
-from salesforce_batch.bulk import SFBulkHandler
+from simple_salesforce.bulk import SFBulkHandler
 
 try:
     from collections import OrderedDict
@@ -90,7 +90,7 @@ class Salesforce(object):
         * proxies -- the optional map of scheme to proxy server
         * session -- Custom requests session, created in calling code. This
                      enables the use of requests Session features not otherwise
-                     exposed by salesforce_batch.
+                     exposed by simple_salesforce.
 
         """
 
