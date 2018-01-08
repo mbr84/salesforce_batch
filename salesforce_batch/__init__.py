@@ -1,7 +1,7 @@
 """Simple-Salesforce Package"""
 # flake8: noqa
 
-from simple_salesforce_batchsalesforce.api import (
+from salesforce_batch.api import (
     Salesforce,
     SalesforceAPI,
     SFType
