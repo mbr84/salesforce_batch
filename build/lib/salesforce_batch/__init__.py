@@ -1,21 +1,21 @@
 """Simple-Salesforce Package"""
 # flake8: noqa
 
-from simple_salesforce.api import (
+from simple_salesforce_batchsalesforce.api import (
     Salesforce,
     SalesforceAPI,
     SFType
 )
 
-from simple_salesforce.bulk import (
+from salesforce_batch.bulk import (
     SFBulkHandler
 )
 
-from simple_salesforce.login import (
+from salesforce_batch.login import (
     SalesforceLogin
 )
 
-from simple_salesforce.exceptions import (
+from salesforce_batch.exceptions import (
     SalesforceError,
     SalesforceMoreThanOneRecord,
     SalesforceExpiredSession,

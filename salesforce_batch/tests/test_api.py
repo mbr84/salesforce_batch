@@ -21,8 +21,8 @@ except ImportError:
 
 import requests
 
-from simple_salesforce import tests
-from simple_salesforce.api import (
+from salesforce_batch import tests
+from salesforce_batch.api import (
     Salesforce,
     SFType,
     Usage,
@@ -48,7 +48,7 @@ def _create_sf_type(
 class TestSFType(unittest.TestCase):
     """Tests for the SFType instance"""
     def setUp(self):
-        request_patcher = patch('simple_salesforce.api.requests')
+        request_patcher = patch('salesforce_batch.api.requests')
         self.mockrequest = request_patcher.start()
         self.addCleanup(request_patcher.stop)
 
@@ -461,7 +461,7 @@ class TestSalesforce(unittest.TestCase):
     """Tests for the Salesforce instance"""
     def setUp(self):
         """Setup the SalesforceLogin tests"""
-        request_patcher = patch('simple_salesforce.api.requests')
+        request_patcher = patch('salesforce_batch.api.requests')
         self.mockrequest = request_patcher.start()
         self.addCleanup(request_patcher.stop)
 
@@ -557,7 +557,7 @@ class TestSalesforce(unittest.TestCase):
         session = requests.Session()
         session.proxies = tests.PROXIES
 
-        with patch('simple_salesforce.api.logger.warning') as mock_log:
+        with patch('salesforce_batch.api.logger.warning') as mock_log:
             client = Salesforce(session_id=tests.SESSION_ID,
                 instance_url=tests.SERVER_URL, session=session, proxies={})
             self.assertIn('ignoring proxies', mock_log.call_args[0][0])

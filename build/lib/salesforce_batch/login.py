@@ -6,9 +6,9 @@ Heavily Modified from RestForce 1.0.0
 DEFAULT_CLIENT_ID_PREFIX = 'RestForce'
 
 
-from simple_salesforce.api import DEFAULT_API_VERSION
-from simple_salesforce.util import getUniqueElementValueFromXmlString
-from simple_salesforce.exceptions import SalesforceAuthenticationFailed
+from salesforce_batch.api import DEFAULT_API_VERSION
+from salesforce_batch.util import getUniqueElementValueFromXmlString
+from salesforce_batch.exceptions import SalesforceAuthenticationFailed
 
 try:
     # Python 3+
@@ -41,7 +41,7 @@ def SalesforceLogin(
     * proxies -- the optional map of scheme to proxy server
     * session -- Custom requests session, created in calling code. This
                  enables the use of requets Session features not otherwise
-                 exposed by simple_salesforce.
+                 exposed by salesforce_batch.
     * client_id -- the ID of this client
     """
 

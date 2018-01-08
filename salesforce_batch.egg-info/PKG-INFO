@@ -2,7 +2,7 @@ Metadata-Version: 1.1
 Name: salesforce-batch
 Version: 0.1
 Summary: a fork of simple-salesforce with multi-batch jobs.
-Home-page: https://github.com/mbr84/simple-salesforce
+Home-page: https://github.com/mbr84/salesforce_batch
 Author: NICK CATALANO forked by matt bramfeld
 Author-email: matthew.bramfeld@gmail.com
 License: UNKNOWN

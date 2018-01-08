@@ -19,16 +19,16 @@ except ImportError:
     from unittest.mock import Mock, patch
     from urllib.parse import urlparse
 
-from simple_salesforce import tests
-from simple_salesforce.login import SalesforceLogin
-from simple_salesforce.exceptions import SalesforceAuthenticationFailed
+from salesforce_batch import tests
+from salesforce_batch.login import SalesforceLogin
+from salesforce_batch.exceptions import SalesforceAuthenticationFailed
 
 
 class TestSalesforceLogin(unittest.TestCase):
     """Tests for the SalesforceLogin function"""
     def setUp(self):
         """Setup the SalesforceLogin tests"""
-        request_patcher = patch('simple_salesforce.login.requests')
+        request_patcher = patch('salesforce_batch.login.requests')
         self.mockrequest = request_patcher.start()
         self.addCleanup(request_patcher.stop)
 

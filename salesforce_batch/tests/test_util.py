@@ -15,7 +15,7 @@ except ImportError:
 import datetime
 import pytz
 
-from simple_salesforce.exceptions import (
+from salesforce_batch.exceptions import (
     SalesforceMoreThanOneRecord,
     SalesforceMalformedRequest,
     SalesforceExpiredSession,
@@ -23,7 +23,7 @@ from simple_salesforce.exceptions import (
     SalesforceResourceNotFound,
     SalesforceGeneralError
 )
-from simple_salesforce.util import (
+from salesforce_batch.util import (
     getUniqueElementValueFromXmlString, date_to_iso8601, exception_handler
 )
 
