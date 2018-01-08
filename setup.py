@@ -22,7 +22,7 @@ setup(
     author='NICK CATALANO forked by matt bramfeld',
     author_email='matthew.bramfeld@gmail.com',
     packages=['salesforce_batch',],
-    download_url="https://github.com/mbr84/salesforce_batch/archive/0.1.1.tar.gz",
+    download_url="https://github.com/mbr84/salesforce_batch/archive/0.1.2.tar.gz",
     url='https://github.com/mbr84/salesforce_batch',
     description='a fork of simple-salesforce with multi-batch jobs.',
 
