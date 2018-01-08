@@ -18,7 +18,7 @@ if sys.version_info < (3, 0):
 
 setup(
     name='salesforce_batch',
-    version='0.1',
+    version='0.1.1',
     author='NICK CATALANO forked by matt bramfeld',
     author_email='matthew.bramfeld@gmail.com',
     packages=['salesforce_batch',],
