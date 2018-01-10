@@ -27,5 +27,4 @@ When accessing the bulk API, instead of retruning a list of results, one diction
 returns a list of lists, representing the results of the job. Each inner list represents a batch, and
 like Simple Salesforce, comprises dictionaries corresponding to the affected rows. 
 
-For examples and documentation, check out the `Simple Salesforce <https://github.com/simple-salesforce/simple-salesforce/>`_
- repo.
+For examples and documentation, check out `Simple Salesforce <https://github.com/simple-salesforce/simple-salesforce/>`_
