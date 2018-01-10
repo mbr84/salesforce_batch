@@ -5,6 +5,8 @@ Salesforce Batch
 Salesforce Batch is a basic Salesforce.com REST API client written almost entirely by Nick Catalano
 and `the rest of the crew`_ over at `Simple Salesforce`_. For example of how the Salesforce Batch client
 is used, look there. 
+.. _the rest of the crew https://github.com/simple-salesforce/simple-salesforce/graphs/contributors
+.. _Simple Salesforce https://github.com/simple-salesforce/simple-salesforce
 
 At the time of this writing, Simple Salesforce does interface with the Salesforce bulk API, but does not
 leverage the multi-batch upload jobs, and so can only create/update/destroy up to 10,000 records at a time.
@@ -26,3 +28,6 @@ are in the bulk API, and even there things are pretty much the same. In terms of
 When accessing the bulk API, instead of retruning a list of results, one dictionary per row, Salesforce Batch
 returns a list of lists, representing the results of the job. Each inner list represents a batch, and
 like Simple Salesforce, comprises dictionaries corresponding to the affected rows. 
+
+For examples and documentation, check out the `Simple Salesforce`_ repo.
+.. _Simple Salesforce https://github.com/simple-salesforce/simple-salesforce
