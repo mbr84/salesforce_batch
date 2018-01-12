@@ -2,13 +2,11 @@
 
 Salesforce Batch is a basic Salesforce.com REST API client written almost entirely by [Nick Catalano and the rest of the team](https://github.com/simple-salesforce/simple-salesforce/graphs/contributors) over at [Simple Salesforce](https://github.com/simple-salesforce/simple-salesforce/). For example of how the Salesforce Batch client is used, look there.
 
-At the time of this writing, Simple Salesforce does interface with the Salesforce bulk API, but does not leverage the multi-batch upload jobs, and so can only create/update/destroy up to 10,000 records at a time.
-With the cost of entry as high as it is, for most paying Salesforce users, this is simply not enough. Enter
-Salesforce Batch.
+At the time of this writing, while Simple Salesforce does interface with the Salesforce bulk API, it does not leverage multi-batch upload jobs, and as a result can only create/update/destroy up to 10,000 records at a time. Considering the cost of entry, for many Salesforce users this simply isn't good enough. Enter Salesforce Batch. Batch breaks your records out into batches (groups of 10,000) and leverages Python's multithreading library to complete a bulk requests as quickly and efficiently as possible. It's still early days for this package; but for me at least it's already paying off. We started using it at work and on day two, in a sort of trial by fire, it successuflly updated over a quarter million customer records in a single call. 
 
 Getting Started...
 ---------------
-...works like this:
+...goes like this:
 
 ```shell
 $ pip install salesforce_batch
