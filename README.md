@@ -20,7 +20,7 @@ When accessing the bulk API, instead of returning a list of results, one diction
 ```python
 from salesforce_batch import Salesforce
 sf = Salesforce(username=your_name, password=your_pass,
-                       sandbox=False, security_token=i_wish_id_bought_bitcoin,
+                       sandbox=False, security_token=goddamn.bitcoin,
                        client_id=your_id)
 bulk_client = sf.bulk.Account
 bulk_client.update(update_dict)
