@@ -29,4 +29,5 @@ bulk_client.update(update_dict)
 
 
 For examples and documentation, check out [Simple Salesforce](https://github.com/simple-salesforce/simple-salesforce/)
+
 [Salesforce Batch on PyPI](https://pypi.python.org/pypi/salesforce_batch/0.1.2)
