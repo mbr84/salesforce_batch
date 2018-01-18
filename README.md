@@ -27,6 +27,7 @@ bulk_client.update(update_dict)
 # => [[{key: row_from_batch_one}], [{key: row_from_batch_two}], [{key: etc}]]
 ```
 
+Thanks and credit to [Nick Catalano and the rest of the team](https://github.com/simple-salesforce/simple-salesforce/graphs/contributors) over at [Simple Salesforce](https://github.com/simple-salesforce/simple-salesforce/)
 
 For examples and documentation, check out [Simple Salesforce](https://github.com/simple-salesforce/simple-salesforce/tree/master/docs)
 
